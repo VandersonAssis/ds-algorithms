@@ -1,28 +1,32 @@
+General:
+    ===== If we have to find a number in an sorted array, binary search is the best approach. Basically start from the number on middle and if the requested value if larger than the middle number
+      then start searching fromt the right of it, if not, then from the left.
+
 Graph:
-	- Good to find shortest flight routes
-	- Recursion is almost mandatory when dealing with graphs
+	===== Good to find shortest flight routes
+	===== Recursion is almost mandatory when dealing with graphs
 
 Tree:
-	- Good to find grand child, grand parent, etc...
-	- Recursion is almost mandatory when dealing with trees
+	===== Good to find grand child, grand parent, etc...
+	===== Recursion is almost mandatory when dealing with trees
 
 Recursion:
-    - Recursion has a time and space overhead when comparing to iteration, because it uses the Stack.
-    - If a problem can be broken down into similar sub-problem, then the solution to solve it might be recursion.
-    - Recursion makes the code easy to write and read over iteration
-    - Recursion helps a lot when dealing with tree and graph
-    - Recursion is heavily used in techniques like "Divide and Conquer", "Greedy" and "Dynamic Programming"
+    ===== Recursion has a time and space overhead when comparing to iteration, because it uses the Stack.
+    ===== If a problem can be broken down into similar sub-problem, then the solution to solve it might be recursion.
+    ===== Recursion makes the code easy to write and read over iteration
+    ===== Recursion helps a lot when dealing with tree and graph
+    ===== Recursion is heavily used in techniques like "Divide and Conquer", "Greedy" and "Dynamic Programming"
 
 Run Time Analysis:
-    - Omega notation (The given algorithm runtime will not be LESS THAN given time) gives us the tighter lower bou nd of a given algorithm.
+    ===== Omega notation (The given algorithm runtime will not be LESS THAN given time) gives us the tighter lower bou nd of a given algorithm.
       In a layman's language, we can say that for any given input, the running time of the algorithm will not be less than given time.
       For example: when searching a value in an array with N values, the Omega will be Ω(1). The 1 is one unit. Each position in the array is one unit.
 
-    - Big-O notation (The given algorithm runtime will not be MORE THAN given time) gives the tighter upper bound of a given algorithm.
+    ===== Big-O notation (The given algorithm runtime will not be MORE THAN given time) gives the tighter upper bound of a given algorithm.
       In a layman's language we can say that for any given input, running time of a given algorithm will not be more than given time.
       For example: when searching a value in an array with N values, the Big-o will be O(n). The n is the limit unit, so the time will not be longer than n. Each position in the array is one unit.
 
-      Calculating big-o in an algorithm
+      Calculating big-o in an iteration algorithm
       FindBiggestNumber(int arr[]):
         biggestNumber = arr[0] //This line's big-o time complexity is O(1). Remember, whenever we have a constant value, it could be one or one million, the big-o for it is O(1)
         loop: i = 1 to length(arr) - 1 //This line's big-o time complexity is O(n), since it goes through all the items in the array
@@ -33,7 +37,17 @@ Run Time Analysis:
       So we end up with; O(1) + O(n) + O(1) + O(1) + O(1) = O(n). So the time complexity for the above algorithm is O(n). O(1) is basically discarded because n will always be
       larger than one. Let's say n is one billion. Adding or removing one changes it considerably? No. So n stands out.
 
-    - Theta notation (In an average, how much time does the given algorithm takes) decided whether upper bound and lower bound of a given algorithm are same or not.
+      Calculating big-o in an recursive algorithm (this calculation is on the Finding time complexity of recursive algo #1 video)
+      FindBiggestNumber(A, n):
+        static highest = Integer.Min
+        if n equals -1
+            return highest
+        else
+            if A[n] > highest
+                update highest
+        return FindBiggestNumber(A, n-1)
+
+    ===== Theta notation (In an average, how much time does the given algorithm takes) decided whether upper bound and lower bound of a given algorithm are same or not.
       In a layman's language we can say that for any given input, running time of a given algorithm will on an average be equal to given time.
       For example: when searching a value in an array with N values, the Theta will be Θ(n/2). The n is the limit unit, so the average runtime will be half the limit of the array.
       Each position in the array is one unit.

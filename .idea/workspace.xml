@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b876c8-61ab-4708-b860-9346dbb40fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/recursion/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/DeleteNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/InOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/LevelOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/PostOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/PreOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/SearchUsingLevelOrderTraverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/TreeHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/recursion/MainRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/van/recursion/Factorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/recursion/tree/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/recursion/tree/builders/TreeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +39,13 @@
     </option>
   </component>
   <component name="ProjectId" id="1SzUtV1hZhd0cvJd0kQnbMzjy1B" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk-11.0.5" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -48,25 +53,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Fibonacci">
-    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.van.recursion.Factorial" />
+  <component name="RunManager" selected="Application.DeleteNode">
+    <configuration name="DeleteNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.DeleteNode" />
       <module name="udemy-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.van.recursion.*" />
+          <option name="PATTERN" value="com.van.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +67,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.van.recursion.Fibonacci" />
+    <configuration name="InOrderTraverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.InOrderTraverse" />
       <module name="udemy-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.van.recursion.*" />
+          <option name="PATTERN" value="com.van.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelOrderTraverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.LevelOrderTraverse" />
+      <module name="udemy-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostOrderTraverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.PostOrderTraverse" />
+      <module name="udemy-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchUsingLevelOrderTraverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.SearchUsingLevelOrderTraverse" />
+      <module name="udemy-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.van.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,10 +121,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Fibonacci" />
-        <item itemvalue="Application.Factorial" />
+        <item itemvalue="Application.DeleteNode" />
+        <item itemvalue="Application.SearchUsingLevelOrderTraverse" />
+        <item itemvalue="Application.LevelOrderTraverse" />
+        <item itemvalue="Application.PostOrderTraverse" />
+        <item itemvalue="Application.InOrderTraverse" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,5 +166,55 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1575214955555">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="765" y="224" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575214955555" />
+    <state x="640" y="236" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574985537916">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="640" y="236" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1574985537916" />
+    <state width="406" height="466" key="DebuggerActiveHint" timestamp="1575330713917">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="406" height="466" key="DebuggerActiveHint/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575330713917" />
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom" timestamp="1575419493106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
+    <state width="1877" height="258" key="GridCell.Tab.0.center" timestamp="1575419493105">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493105" />
+    <state width="1877" height="258" key="GridCell.Tab.0.left" timestamp="1575419493105">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493105" />
+    <state width="1877" height="258" key="GridCell.Tab.0.right" timestamp="1575419493106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
+    <state width="1877" height="258" key="GridCell.Tab.1.bottom" timestamp="1575419493106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
+    <state width="1877" height="258" key="GridCell.Tab.1.center" timestamp="1575419493106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.1.center/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
+    <state width="1877" height="258" key="GridCell.Tab.1.left" timestamp="1575419493106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.1.left/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
+    <state width="1877" height="258" key="GridCell.Tab.1.right" timestamp="1575419493106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="258" key="GridCell.Tab.1.right/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
+    <state x="656" y="332" key="com.intellij.ide.util.TipDialog" timestamp="1575493008216">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="656" y="332" key="com.intellij.ide.util.TipDialog/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575493008216" />
   </component>
 </project>
