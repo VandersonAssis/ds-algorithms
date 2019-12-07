@@ -1,28 +1,105 @@
-General:
-    ===== If we have to find a number in an sorted array, binary search is the best approach. Basically start from the number on middle and if the requested value if larger than the middle number
-      then start searching fromt the right of it, if not, then from the left.
-
 Graph:
-	===== Good to find shortest flight routes
-	===== Recursion is almost mandatory when dealing with graphs
+	- Good to find shortest flight routes
+	- Vertex is a node of a graph
+	- Edge are the lines that connect vertex, just like in tree
+	- UnWeighted graph is when the edges doesn't have any weight.
+	- Weighted graph is when edges have weight set. So let's say, from v1 to v4 the weight is 8, so it's 8 unit of time
+	- Undirected graph is when the edges doesn't have a direction set into them. So that means we can go from v1 to v4 back and forth freely
+	- Directed graph, tells us that an edge can only be traversed by one direction
+	- Cyclic graph, is when a graph have atleast one loop
+	- Acyclic graph, is when we don't have any loop in it
+	- The adjacency Matrix is a 2D array and it's used when we have a complet or near to complete graph. It's important to notice that this structure should only be used in these situation, or else the cells in which there are not vertex would be empty and not optimal.
+	- Adjacency List is a linked list representation of the graph. We use it when the number of edges are few.
+	- BFS (Breadth First Search) is when we traverse the graph in a level by level way. Same as the level order traverse in a tree. In this traverse, we use a queue
+	- DFS (Depth First Search) It goes vertex by vertex in direction to the bottom of the graph. When it reaches the bottom, it'll start backtracking. That is, it goes to the vertex on the right and then goes upwards until it reaches the top,. when it reaches the top it goes right and again, goes to the bottom. In this traverse we use a stack
 
-Tree:
-	===== Good to find grand child, grand parent, etc...
-	===== Recursion is almost mandatory when dealing with trees
+Binary Tree:
+	- Good to find grand child, grand parent, etc...
+	- The level order traverse is better then the inorder, preorder or postorder traverse, because it uses a queue and the later use the stack, which is slower
+	- An edge is basically the link between one node and another. node1--------------node2 ... that dashed line is the edge
+	- The depth of node is how many edges are between the root to that pre-determined node
+	- A height of node is how many edges separate that node from a pre-determined child
+	- Height of a tree is how many edges to get to the root node from the deepest node.
+	- Depth of a tree is how many edges to get to the deepest node from the root node
+	- Predecessor of a node is the immediate previous node in inorder traversal o fthe binary Tree
+	So, we order the Tree in a linear way from smallest to largest and the node on the left will be the predecessor
+	- Successor of a node is almost the same as the predecessor, but the node on the right
+	- Pre-Order traversal: Root, left subtree and then right subtree
+	- An insertion can be done in an ordered way, or by levels. So, when adding a new value, we verify if the root node has both children, if it does, then go left and see if that node has both children, if it does, then we go right and see if that node has both children, if it doesn't we add that new child in the vacant spot.
+
+Binary Seach Tree:
+	- This is a tree, but all the numbers on the left nodes will be less or equal to their parent and the right nodes will be greater than their parent node
+
+	- Node deletion:
+	When we have one leaf node, then all we have to do is connect the parent node into the node bellow of the one that will be deleted.
+
+	When it's two leaf node, then we have to get the sucessor (closer larger) number to the right and replace the node that will be deleted with it
+
+AVL Tree:
+	- AVL Tree is good to make sure we always have a well balanced Tree. Let's say we're inserting the following values, 10, 20, 30, 40, 50, 60 and 70. That would end up with an unbalanced tree which has the root values as 10 and all the other values in the right nodes. An AVL Tree would make sure that the root value is 40, hence, the other values would be well balanced to left and to the right.
+
+	- A tree well balanced when the height of immediate subtrees of any node differs by at most one.
+	For more info, see the bellow video
+	https://www.udemy.com/course/learn-data-structure-algorithms-with-java-interview/learn/lecture/13654316#questions
+
+	- Whenever a tree is well balanced considering above rules, it's considered to be an AVL Tree
+
+	- We have the following conditions for rotation:
+	LL (Left Left),
+	LR (Left Right),
+	RR (Right, Right),
+	RL (Right, Left).
+	To do a rotation we must see which node is causing the misbalance, and if to get to the node you go left, left the it's a LL condition which means we'll do a rotation to the right. See bellow video for more info on this.
+	https://www.udemy.com/course/learn-data-structure-algorithms-with-java-interview/learn/lecture/13654324#questions
+
+Binary Heap:
+	- min-heap implies that all children nodes will be less or equal to the parent node
+	- max-heap implies that all children will have a value larger then their parent
+	- The peek operation returns only the first node of the tree
+
+Stack:
+	- It uses the LIFO approach, which is the last in will be the first out.
+	- Avoid using it when random access is required
+
+Hash:
+	- Hash is when we convert string into integer, actually there are a lot more to this, watch the video bellow for more details.
+
+	- A real world solution that use hashing is password verification. When we log in to Google, it hashes our password and verifies if that hash value matches the one they have in their database, if so, then the password provided is valid.
+
+	https://www.udemy.com/course/learn-data-structure-algorithms-with-java-interview/learn/lecture/8477608#overview
+
+Array:
+	- Using of array is advised when random access is going to happen. Since it takes O(1) to access any position in an array, on contrary if linked list is used, then the time complexity would be O(n), because we'd have to traverse the list to access any position
+
+	- Avoid using an array when
+
+LinkedList:
+	- Avoid it when the problem we're solving involve searching data. Becauase it searches linearly O(n)
+	- Single linked list, has data and a reference to the next node
+	- Circular single linked list, the same as single linked list, but the tail references the head position
+	- Double linked list has data, reference to previous node and reference to next node
+	- Circular double linked list, the same as double linked list with the last node referencing to the head node
+
+Logarithm:
+	- log2(8). In this example, log asks us what do I need to power the base of 2 by, to get the number on the parentesis. In this case is 3. Because, 2³ = (8/4=4 (first step) 4/2=2 (second step) 2/2=1 (third step)) three steps.
+
+	- Whenever no base is provided to the log, we assume is 2.
+
+	- Whenever a person says the problem is going to have a log(n) complexity, then the solution will be a binary tree or a binary search.
 
 Recursion:
-    ===== Recursion has a time and space overhead when comparing to iteration, because it uses the Stack.
-    ===== If a problem can be broken down into similar sub-problem, then the solution to solve it might be recursion.
-    ===== Recursion makes the code easy to write and read over iteration
-    ===== Recursion helps a lot when dealing with tree and graph
-    ===== Recursion is heavily used in techniques like "Divide and Conquer", "Greedy" and "Dynamic Programming"
+    - Recursion has a time and space overhead when comparing to iteration, because it uses the Stack.
+    - If a problem can be broken down into similar sub-problem, then the solution to solve it might be recursion.
+    - Recursion makes the code easy to write and read over iteration
+    - Recursion helps a lot when dealing with tree and graph
+    - Recursion is heavily used in techniques like "Divide and Conquer", "Greedy" and "Dynamic Programming"
 
 Run Time Analysis:
-    ===== Omega notation (The given algorithm runtime will not be LESS THAN given time) gives us the tighter lower bou nd of a given algorithm.
+    - Omega notation (The given algorithm runtime will not be LESS THAN given time) gives us the tighter lower bou nd of a given algorithm.
       In a layman's language, we can say that for any given input, the running time of the algorithm will not be less than given time.
       For example: when searching a value in an array with N values, the Omega will be Ω(1). The 1 is one unit. Each position in the array is one unit.
 
-    ===== Big-O notation (The given algorithm runtime will not be MORE THAN given time) gives the tighter upper bound of a given algorithm.
+    - Big-O notation (The given algorithm runtime will not be MORE THAN given time) gives the tighter upper bound of a given algorithm.
       In a layman's language we can say that for any given input, running time of a given algorithm will not be more than given time.
       For example: when searching a value in an array with N values, the Big-o will be O(n). The n is the limit unit, so the time will not be longer than n. Each position in the array is one unit.
 
@@ -47,7 +124,7 @@ Run Time Analysis:
                 update highest
         return FindBiggestNumber(A, n-1)
 
-    ===== Theta notation (In an average, how much time does the given algorithm takes) decided whether upper bound and lower bound of a given algorithm are same or not.
+    - Theta notation (In an average, how much time does the given algorithm takes) decided whether upper bound and lower bound of a given algorithm are same or not.
       In a layman's language we can say that for any given input, running time of a given algorithm will on an average be equal to given time.
       For example: when searching a value in an array with N values, the Theta will be Θ(n/2). The n is the limit unit, so the average runtime will be half the limit of the array.
       Each position in the array is one unit.
