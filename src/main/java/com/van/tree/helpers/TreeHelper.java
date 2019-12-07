@@ -10,7 +10,7 @@ public class TreeHelper {
         return node.left == null && node.right == null;
     }
 
-    public static void print() {
+    public static void print(Node root) {
         List<Node> queue = new ArrayList<>();
         queue.add(root);
 
@@ -77,6 +77,10 @@ public class TreeHelper {
         root.right.left = new Node(250);
         root.right.right = new Node(35);
 
+        return root;
+    }
+
+    public static Node getRoot() {
         return root;
     }
 }

@@ -8,9 +8,9 @@ import java.util.List;
 
 public class DeleteNode {
     public static void main(String[] args) {
-        TreeHelper.print();
+        TreeHelper.print(TreeHelper.getRoot());
         deleteValue(TreeHelper.build(), 20);
-        TreeHelper.print();
+        TreeHelper.print(TreeHelper.getRoot());
     }
 
     private static void deleteValue(Node root, int value) {

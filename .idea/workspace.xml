@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b876c8-61ab-4708-b860-9346dbb40fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/DeleteNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/InOrderTraverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/LevelOrderTraverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/PostOrderTraverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/PreOrderTraverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/SearchUsingLevelOrderTraverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/TreeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/graph/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/BinarySearchTreeHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/tree/DeleteNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/DeleteNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/TreeHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/TreeHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/van/tree/DeleteNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/van/tree/DeleteNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/van/tree/helpers/TreeHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/van/tree/helpers/TreeHelper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +51,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.DeleteNode">
-    <configuration name="DeleteNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.van.tree.DeleteNode" />
+  <component name="RunManager" selected="Application.BinarySearchTree">
+    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.BinarySearchTree" />
       <module name="udemy-course" />
       <extension name="coverage">
         <pattern>
@@ -67,8 +65,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InOrderTraverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.van.tree.InOrderTraverse" />
+    <configuration name="DeleteNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.van.tree.DeleteNode" />
       <module name="udemy-course" />
       <extension name="coverage">
         <pattern>
@@ -121,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearchTree" />
         <item itemvalue="Application.DeleteNode" />
         <item itemvalue="Application.SearchUsingLevelOrderTraverse" />
         <item itemvalue="Application.LevelOrderTraverse" />
         <item itemvalue="Application.PostOrderTraverse" />
-        <item itemvalue="Application.InOrderTraverse" />
       </list>
     </recent_temporary>
   </component>
@@ -176,45 +174,53 @@
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="640" y="236" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1574985537916" />
-    <state width="406" height="466" key="DebuggerActiveHint" timestamp="1575330713917">
+    <state width="411" height="466" key="DebuggerActiveHint" timestamp="1575500437503">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="406" height="466" key="DebuggerActiveHint/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575330713917" />
-    <state width="1877" height="258" key="GridCell.Tab.0.bottom" timestamp="1575419493106">
+    <state width="411" height="466" key="DebuggerActiveHint/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575500437503" />
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom" timestamp="1575506093834">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
-    <state width="1877" height="258" key="GridCell.Tab.0.center" timestamp="1575419493105">
+    <state width="1877" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093834" />
+    <state width="1877" height="258" key="GridCell.Tab.0.center" timestamp="1575506093834">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493105" />
-    <state width="1877" height="258" key="GridCell.Tab.0.left" timestamp="1575419493105">
+    <state width="1877" height="258" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093834" />
+    <state width="1877" height="258" key="GridCell.Tab.0.left" timestamp="1575506093834">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493105" />
-    <state width="1877" height="258" key="GridCell.Tab.0.right" timestamp="1575419493106">
+    <state width="1877" height="258" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093834" />
+    <state width="1877" height="258" key="GridCell.Tab.0.right" timestamp="1575506093834">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
-    <state width="1877" height="258" key="GridCell.Tab.1.bottom" timestamp="1575419493106">
+    <state width="1877" height="258" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093834" />
+    <state width="1877" height="258" key="GridCell.Tab.1.bottom" timestamp="1575506093835">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
-    <state width="1877" height="258" key="GridCell.Tab.1.center" timestamp="1575419493106">
+    <state width="1877" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093835" />
+    <state width="1877" height="258" key="GridCell.Tab.1.center" timestamp="1575506093835">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.1.center/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
-    <state width="1877" height="258" key="GridCell.Tab.1.left" timestamp="1575419493106">
+    <state width="1877" height="258" key="GridCell.Tab.1.center/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093835" />
+    <state width="1877" height="258" key="GridCell.Tab.1.left" timestamp="1575506093835">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.1.left/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
-    <state width="1877" height="258" key="GridCell.Tab.1.right" timestamp="1575419493106">
+    <state width="1877" height="258" key="GridCell.Tab.1.left/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093835" />
+    <state width="1877" height="258" key="GridCell.Tab.1.right" timestamp="1575506093835">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="258" key="GridCell.Tab.1.right/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575419493106" />
-    <state x="656" y="332" key="com.intellij.ide.util.TipDialog" timestamp="1575493008216">
+    <state width="1877" height="258" key="GridCell.Tab.1.right/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575506093835" />
+    <state x="681" y="250" width="540" height="524" key="StructurePopup" timestamp="1575499775003">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state x="656" y="332" key="com.intellij.ide.util.TipDialog/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575493008216" />
+    <state x="681" y="250" width="540" height="524" key="StructurePopup/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575499775003" />
+    <state x="656" y="332" key="com.intellij.ide.util.TipDialog" timestamp="1575739832667">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="656" y="332" key="com.intellij.ide.util.TipDialog/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575739832667" />
+    <state x="536" y="244" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575500540845">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="536" y="244" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1019/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1019" timestamp="1575500540845" />
   </component>
 </project>
