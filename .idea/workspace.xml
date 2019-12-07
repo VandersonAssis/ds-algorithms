@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b876c8-61ab-4708-b860-9346dbb40fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/graph/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/BinarySearchTreeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/tree/DeleteNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/DeleteNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/TreeHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/van/tree/helpers/TreeHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/van/tree/DeleteNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/van/tree/DeleteNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/van/tree/helpers/TreeHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/van/tree/helpers/TreeHelper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
