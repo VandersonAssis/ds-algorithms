@@ -8,10 +8,17 @@ Graph:
 	- Directed graph, tells us that an edge can only be traversed by one direction
 	- Cyclic graph, is when a graph have atleast one loop
 	- Acyclic graph, is when we don't have any loop in it
-	- The adjacency Matrix is a 2D array and it's used when we have a complet or near to complete graph. It's important to notice that this structure should only be used in these situation, or else the cells in which there are not vertex would be empty and not optimal.
+	- The adjacency Matrix is a 2D array and it's used when we have a complete or near to complete graph, that means that almost all the edges exist.
+	  It's important to notice that this structure should only be used in these situations, or else the cells in which there are no edges would be empty
+	  and not optimal.
 	- Adjacency List is a linked list representation of the graph. We use it when the number of edges are few.
-	- BFS (Breadth First Search) is when we traverse the graph in a level by level way. Same as the level order traverse in a tree. In this traverse, we use a queue
-	- DFS (Depth First Search) It goes vertex by vertex in direction to the bottom of the graph. When it reaches the bottom, it'll start backtracking. That is, it goes to the vertex on the right and then goes upwards until it reaches the top,. when it reaches the top it goes right and again, goes to the bottom. In this traverse we use a stack
+	- BFS (Breadth First Search) is when we traverse the graph in a level by level way. Same as the level order traverse in a tree. In this traverse,
+	  we use a queue.
+	  This search is better when we already know that the vertex is shallow in the graph
+	- DFS (Depth First Search) It goes vertex by vertex in direction to the bottom of the graph. When it reaches the bottom, it'll start backtracking.
+	  That is, it goes to the vertex on the right and then goes upwards until it reaches the top,. when it reaches the top it goes right and again, goes to
+	  the bottom. In this traverse we use a stack.
+	  This search is better when we already know that the vertex we're searching is buried very deep in the graph
 
 Binary Tree:
 	- Good to find grand child, grand parent, etc...
