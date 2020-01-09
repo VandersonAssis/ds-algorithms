@@ -3,21 +3,21 @@ package com.van.graph.dijkstra.models;
 import java.util.Objects;
 
 public class Vertex implements Comparable<Vertex> {
-    private Character character;
+    private Character id;
     private Integer distance;
 
     public Vertex(Character id, Integer distance) {
         super();
-        this.character = id;
+        this.id = id;
         this.distance = distance;
     }
 
-    public Character getCharacter() {
-        return character;
+    public Character getId() {
+        return id;
     }
 
-    public void setCharacter(Character character) {
-        this.character = character;
+    public void setId(Character id) {
+        this.id = id;
     }
 
     public Integer getDistance() {
@@ -33,18 +33,18 @@ public class Vertex implements Comparable<Vertex> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Vertex vertex = (Vertex) o;
-        return Objects.equals(character, vertex.character) &&
+        return Objects.equals(id, vertex.id) &&
                 Objects.equals(distance, vertex.distance);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(character, distance);
+        return Objects.hash(id, distance);
     }
 
     @Override
     public String toString() {
-        return "Vertex{" + "id=" + character + ", distance=" + distance + '}';
+        return "Vertex{" + "character=" + id + ", distance=" + distance + '}';
     }
 
     @Override
@@ -54,6 +54,6 @@ public class Vertex implements Comparable<Vertex> {
         else if(this.distance > o.distance)
             return 1;
         else
-            return this.getCharacter().compareTo(o.getCharacter());
+            return this.getId().compareTo(o.getId());
     }
 }

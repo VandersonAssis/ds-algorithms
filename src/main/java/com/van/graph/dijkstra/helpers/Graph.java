@@ -18,9 +18,11 @@ public class Graph {
     public List<Character> getShortestPath(Character start, Character finish) {
         final Map<Character, Integer> distances = new HashMap<>();
         final Map<Character, Vertex> previous = new HashMap<>();
+        //This priority queue uses the compareTo method from the Vertex to decide if the added Vertex is going to be in the beginning of the
+        //list or not. This will basically sort the list according to the distance
         PriorityQueue<Vertex> nodes = new PriorityQueue<>();
 
-        //Setting the infinite nodes and the start?
+        //Setting the start distances of all the nodes. Basically, if the node is not the start node, then it's set to infinite
         for(Character vertex : this.vertices.keySet()) {
             if(vertex == start) {
                 distances.put(vertex, 0);
@@ -34,34 +36,38 @@ public class Graph {
         }
 
         while(!nodes.isEmpty()) {
-            Vertex smallest = nodes.poll();
-            if(smallest.getCharacter() == finish) {
+            //Since on the algorithm above we've put the start character with a distance of zero, then it will be the first one to be pulled
+            //from the priority list bellow
+            Vertex newSmallest = nodes.poll();
+
+            //If the newSmallest is the destination node, then, add it to the resulting path, and then load all the parents from the previous nodes
+            if(newSmallest.getId() == finish) {
                 final List<Character> path = new ArrayList<>();
 
-                while(previous.get(smallest.getCharacter()) != null) {
-                    path.add(smallest.getCharacter());
-                    smallest = previous.get(smallest.getCharacter());
+                while(previous.get(newSmallest.getId()) != null) {
+                    path.add(newSmallest.getId());
+                    newSmallest = previous.get(newSmallest.getId());
                 }
 
                 return path;
             }
 
-            if(distances.get(smallest.getCharacter()) == Integer.MAX_VALUE)
+            if(distances.get(newSmallest.getId()) == Integer.MAX_VALUE)
                 break;
 
-            for(Vertex neighbor : vertices.get(smallest.getCharacter())) {
-                Integer alt = distances.get(smallest.getCharacter()) + neighbor.getDistance();
-                if(alt < distances.get(neighbor.getCharacter())) {
-                    distances.put(neighbor.getCharacter(), alt);
-                    previous.put(neighbor.getCharacter(), smallest);
+            List<Vertex> neighbors = this.vertices.get(newSmallest.getId());
+            for(Vertex neighbor : neighbors) {
+                Integer alt = distances.get(newSmallest.getId()) + neighbor.getDistance();
+                if(alt < distances.get(neighbor.getId())) {
+                    distances.put(neighbor.getId(), alt);
+                    previous.put(neighbor.getId(), newSmallest);
 
-                    forLoop:
                     for(Vertex n : nodes) {
-                        if(n.getCharacter() == neighbor.getCharacter()) {
+                        if(n.getId() == neighbor.getId()) {
                             nodes.remove(n);
                             n.setDistance(alt);
                             nodes.add(n);
-                            break forLoop;
+                            break;
                         }
                     }
                 }

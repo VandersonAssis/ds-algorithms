@@ -1,4 +1,7 @@
 Graph:
+    - BFS is better for unweighted graphs
+    - Dijkstra is better for weighted graphs
+    - Bellman Ford for graphs with negative cycles.
 	- Good to find shortest routes, friendship relationships and some more
 	- The adjacency list is a bit more complicated to implement and not efficient to query, but it has a better space efficiency
 	- The Adjacency Matrix is a easier to implement and efficient to query, but not really good for space efficiency
