@@ -25,6 +25,16 @@ Graph:
 	  the bottom. In this traverse we use a stack.
 	  This search is better when we already know that the vertexOld we're searching is buried very deep in the graph
 	- Topological sort is used to make sure that dependent actions will only be executed when their parents has already been executed.
+	- Implementation:
+	    Vertex:
+            - The vertex has Character (value) and distance
+            - Create a constructor to it with the fields and a call to super
+            - Implement the compareTo method from the comparable interface
+            - Implement the toString and hashCode
+
+         Graph:
+            - Create a Map (Map<Character>, List<Vertex>))
+            - Create an addVertex method that receives a character and a list of vertices
 
 Binary Tree:
 	- Good to find grand child, grand parent, etc...
