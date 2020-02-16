@@ -1,0 +1,14 @@
+- Write a program that takes input of an integer N, followed by N lines of input sentences. For each sentence, reverse each individual
+word in the sentence. The order of words are not reversed.
+Note: Your output lines should not have any trailing or leading whitespaces.
+
+Example:
+3
+RemoteIo is awesome
+Candidates give interview
+best candidates are selected
+
+Output:
+oIetomeR si emosewa
+setadidnaC evig weivretni
+tseb setadidnac era detceles
